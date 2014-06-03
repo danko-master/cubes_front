@@ -1,16 +1,53 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
+//= require jquery/jquery-1.8.3
+//= require jquery/jquery-ui-1.9.2.custom.min
+//= require jquery/jquery.cookie
 //
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+//= require dateformat/dateformat
 //
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
+//= require jquery/jquery.blockUI
 //
-// Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
-// about supported directives.
+//= require wiky/wiky
+//= require wiky/wiky.math
+//= require flotr2/flotr2.min
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
+//= require d3js/d3.v3
+//= require nvd3/nv.d3
+//= require qtip/jquery.qtip
+//
+//= require jqgrid/i18n/grid.locale-en
+//= require jqgrid/jquery.jqGrid.min
+//
+//= require cubesviewer/cubesviewer
+//= require cubesviewer/cubesviewer.cache
+//= require cubesviewer/cubesviewer.model
+//= require cubesviewer/cubesviewer.views
+//= require cubesviewer/cubesviewer.views.cube
+//= require cubesviewer/cubesviewer.views.cube.explore
+//= require cubesviewer/cubesviewer.views.cube.datefilter
+//= require cubesviewer/cubesviewer.views.cube.rangefilter
+//= require cubesviewer/cubesviewer.views.cube.series
+//= require cubesviewer/cubesviewer.views.cube.chart
+//= require cubesviewer/cubesviewer.views.cube.facts
+//= require cubesviewer/cubesviewer.views.cube.dimensionfilter
+//= require cubesviewer/cubesviewer.views.cube.columns
+//= require cubesviewer/cubesviewer.views.cube.export
+//= require cubesviewer/cubesviewer.views.undo
+//= require cubesviewer/cubesviewer.gui
+//= require cubesviewer/cubesviewer.gui.serializing
+//= require cubesviewer/cubesviewer.gui.localeswitcher.js
+//
+//
 //= require_tree .
+
+$(function() {
+	cubesviewer.init({
+		cubesUrl: 'http://localhost:3000',
+	});
+
+	cubesviewer.gui.init({
+		container: $('#cubesviewer').get(0)
+	});
+
+	// Start Cubesviewer system
+	cubesviewer.refresh();
+});

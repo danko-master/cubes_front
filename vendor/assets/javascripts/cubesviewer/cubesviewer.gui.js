@@ -298,14 +298,14 @@ function cubesviewerGui () {
 	this.onGuiDraw = function(event, gui) {
 		
 		// Draw cubes section
-		gui.drawSection (gui, "Cubes", "cv-gui-cubeslist");
-		gui.drawSection (gui, "Tools", "cv-gui-tools");
+		gui.drawSection (gui, "Кубы", "cv-gui-cubeslist");
+		gui.drawSection (gui, "Инструменты", "cv-gui-tools");
 		
 		
 		if (! ((gui.options.showAbout != undefined) && (gui.options.showAbout == false))) {
 			$(gui.options.container).find('.cv-gui-tools').append(
 				'<div style="margin-top: 8px;">' +
-				'<a href="#" class="cv-gui-about">About CubesViewer...</a>' +
+				'<a href="#" class="cv-gui-about">О CubesViewer...</a>' +
 				'</div>'
 		    );
 			$('.cv-gui-about', gui.options.container).click(function() {

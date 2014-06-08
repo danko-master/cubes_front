@@ -40,14 +40,14 @@
 //= require_tree .
 
 $(function() {
-	cubesviewer.init({
-		cubesUrl: 'http://localhost:3000',
-	});
+  cubesviewer.init({
+    cubesUrl: '', // использовать текущий hostname
+  });
 
-	cubesviewer.gui.init({
-		container: $('#cubesviewer').get(0)
-	});
+  cubesviewer.gui.init({
+    container: $('#cubesviewer').get(0)
+  });
 
-	// Start Cubesviewer system
-	cubesviewer.refresh();
+  // Start Cubesviewer system
+  cubesviewer.refresh();
 });

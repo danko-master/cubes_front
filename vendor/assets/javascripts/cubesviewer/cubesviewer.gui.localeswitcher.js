@@ -39,9 +39,9 @@ function cubesviewerGuiLocaleSwitcher() {
 		
 		$(gui.options.container).find('.cv-gui-tools').prepend(
 				'<div style="margin-bottom: 4px;">' +
-				'Language: ' +
+				'Язык: ' +
 				'<select name="cv-gui-localeswitcher">' +
-				'<option value="">Default</option>' +
+				'<option value="">По-умолчанию</option>' +
 				'</select>' +
 				'</div>'
 		    );
@@ -63,7 +63,7 @@ function cubesviewerGuiLocaleSwitcher() {
 		// Add locales (clean list first)
 		$('[name=cv-gui-localeswitcher]', $(cubesviewer.gui.options.container)).empty();
 		$('[name=cv-gui-localeswitcher]', $(cubesviewer.gui.options.container)).append(
-				'<option value="">Default</option>'
+				'<option value="">По-умолчанию</option>'
 		);
         /*
 		$(cubesviewer.model["locales"]).each(

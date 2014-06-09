@@ -14,7 +14,7 @@
 //= require nvd3/nv.d3
 //= require qtip/jquery.qtip
 //
-//= require jqgrid/i18n/grid.locale-en
+//= require jqgrid/i18n/grid.locale-ru
 //= require jqgrid/jquery.jqGrid.min
 //
 //= require cubesviewer/cubesviewer

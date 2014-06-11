@@ -15,7 +15,7 @@
 //= require qtip/jquery.qtip
 //
 //= require jqgrid/i18n/grid.locale-ru
-//= require jqgrid/jquery.jqGrid.src.js
+//= require jqgrid/jquery.jqGrid.min.js
 //
 //= require cubesviewer/cubesviewer
 //= require cubesviewer/cubesviewer.cache

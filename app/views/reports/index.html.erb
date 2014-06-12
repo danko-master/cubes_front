@@ -1,0 +1,17 @@
+<div class="b-page">
+  <h1>Отчеты</h1>
+
+  <table class="b-reports">
+    <tr>
+      <th>ID</th>
+      <th>Название</th>
+      <th>Время создания</th>
+    </tr>
+
+    <tbody>
+      <%= render @reports %>
+    </tbody>
+  </table>
+
+  <%= paginate @reports %>
+</div>

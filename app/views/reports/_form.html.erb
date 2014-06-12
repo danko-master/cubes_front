@@ -1,0 +1,15 @@
+<%= form_for report, remote: true, html: { class: 'b-report-form' } do |f| %>
+  <%= f.hidden_field :json %>
+
+  <div>
+    <%= f.label :name, 'Название:' %><br>
+    
+    <%= f.text_field :name, class: 'name' %>
+  </div>
+
+  <div>
+    <%= f.button class: 'submit ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' do %>
+      <span class="ui-button-text">Сохранить</span>
+    <% end %>
+  </div>
+<% end %>

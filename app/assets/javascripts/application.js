@@ -2,6 +2,8 @@
 //= require jquery/jquery-ui-1.9.2.custom.min
 //= require jquery/jquery.cookie
 //
+//= require jquery_ujs
+//
 //= require dateformat/dateformat
 //
 //= require jquery/jquery.blockUI
@@ -35,6 +37,7 @@
 //= require cubesviewer/cubesviewer.gui
 //= require cubesviewer/cubesviewer.gui.serializing
 //= require cubesviewer/cubesviewer.gui.localeswitcher.js
+//= require cubesviewer/cubesviewer.gui.reports.js
 //
 //
 //= require_tree .
@@ -45,7 +48,8 @@ $(function() {
   });
 
   cubesviewer.gui.init({
-    container: $('#cubesviewer').get(0)
+    container: $('#cubesviewer').get(0),
+    showAbout: false,
   });
 
   // Start Cubesviewer system

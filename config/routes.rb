@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 	get '/cube/:id/facts' => 'cubes_server_proxy#index'
 
 	get '/cube/:id/members/:id' => 'cubes_server_proxy#index'
+
+  resources :reports, only: [:index, :show, :new, :create]
 end

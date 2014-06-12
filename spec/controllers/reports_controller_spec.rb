@@ -32,4 +32,12 @@ RSpec.describe ReportsController, :type => :controller do
 
     it { should render_template :create }
   end
+
+  describe '#show' do
+    before { expect(Report).to receive(:find).with('2') }
+
+    before { get :show, id: 2 }
+
+    it { should render_template :show }
+  end
 end

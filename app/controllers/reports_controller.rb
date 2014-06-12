@@ -13,6 +13,10 @@ class ReportsController < ApplicationController
     Report.create! _params
   end
 
+  def show
+    @report = Report.find params[:id]
+  end
+
   private
   def _params
     params.require(:report).permit(:name, :json)

@@ -1,0 +1,16 @@
+.b-report {
+  .cv-gui-workspace {
+    min-width: inherit;
+    min-height: inherit;
+    margin-left: 0;
+  }
+
+  .json {
+    display: none;
+  }
+
+  .ui-widget-overlay img {
+    display: block;
+    margin: 25% auto;
+  }
+}

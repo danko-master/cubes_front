@@ -44,7 +44,7 @@
 
 $(function() {
   cubesviewer.init({
-    cubesUrl: '', // использовать текущий hostname
+    cubesUrl: 'http://54.203.57.58:5000/', // использовать текущий hostname
   });
 
   cubesviewer.gui.init({

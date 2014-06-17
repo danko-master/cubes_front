@@ -9,6 +9,8 @@ gem 'sqlite3'
 gem 'kaminari'
 gem 'jquery-rails'
 
+gem 'mysql2', '~> 0.3.11'
+
 group :development, :test do
 	gem 'rspec-rails'
 end

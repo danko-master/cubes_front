@@ -12,3 +12,6 @@ end
 # ActiveSupport.on_load(:active_record) do
 #  self.include_root_in_json = true
 # end
+
+
+SETTINGS_CONFIG = YAML.load_file("#{Rails.root}/config/settings.yml")[Rails.env]

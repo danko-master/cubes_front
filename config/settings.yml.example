@@ -1,0 +1,6 @@
+development:
+  slicer_host: 127.0.0.1:5000
+  # slicer_host: 10.234.57.73:5000
+
+production:
+  slicer_host: 10.234.57.73:5000

@@ -17,5 +17,6 @@
 
 config/database.yml
 config/secrets.yml
+config/settings.yml
 
 public/assets/

@@ -5,7 +5,7 @@ $(function() {
     if(text.length > 0) {
       var serialized = JSON.parse(text);
 
-      var view = cubesviewer.gui.addViewObject(serialized);
+      var view = cubesviewer.gui.addViewObjectReport(serialized);
 
       cubesviewer.views.redrawView(view);
 
@@ -14,4 +14,4 @@ $(function() {
   }
 
   $(document).bind('cubesviewerWorkspaceLoaded', {}, onWorkspaceLoaded);
-});
+});  
